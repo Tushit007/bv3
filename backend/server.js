@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config();-
 
 import express from "express";
 import mongoose from "mongoose";
@@ -7,9 +7,13 @@ import cors from "cors";
 import articleRoutes from "./routes/articleRoutes.js";
 
 const app = express();
-app.use(cors({ origin:["*",      "http://localhost:5173",
-      "http://localhost:5174",
-]}));
+app.use(
+  cors({
+    origin: true,
+    credentials: true
+  })
+);
+
 app.use(express.json());
 
 app.use("/api/articles", articleRoutes);
