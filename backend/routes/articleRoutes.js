@@ -8,9 +8,6 @@ import {
 } from "../controllers/articleController.js";
 
 const router = express.Router();
-app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
-});
 
 
 router.get("/", getArticles);
