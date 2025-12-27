@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-const API = import.meta.env.VITE_API_BASE_URL || "https://bv2-3byh.onrender.com"
+const API = import.meta.env.VITE_API_BASE_URL || "https://bv3-backend.onrender.com"
 ;
 console.log("API USED:", API);
 
