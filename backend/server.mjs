@@ -8,7 +8,11 @@ import articleRoutes from "./routes/articleRoutes.js";
 const app = express();
 app.use(
   cors({
-    origin: true,
+    origin:[
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://YOUR-FRONTEND-URL.onrender.com"
+  ],
     credentials: true
   })
 );
